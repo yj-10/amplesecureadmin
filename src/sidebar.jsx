@@ -188,10 +188,7 @@ export default function Sidebar({ children }) {
               {/* Add Risk Coordinator*/}
               <ListItemButton sx={{ pl: 4 }}>
                 <ListItemIcon>{/* <StarBorder /> */}</ListItemIcon>
-                <ListItemText>
-           
-           
-                </ListItemText>
+                <ListItemText></ListItemText>
               </ListItemButton>
               {/* Add Risk Coordinator*/}
               {/* Add Employee */}
@@ -284,7 +281,12 @@ export default function Sidebar({ children }) {
                 <ListItemIcon>{/* <StarBorder /> */}</ListItemIcon>
                 <ListItemText>
                   {/* Admin Activity */}
-                  Closed Cases
+                  <Link
+                    to="/Assign-Cases"
+                    style={{ textDecoration: "none", color: "rgba(0,0,0,0.8)" }}
+                  >
+                    Closed Cases
+                  </Link>
                 </ListItemText>
               </ListItemButton>
               {/* Pending Cases */}

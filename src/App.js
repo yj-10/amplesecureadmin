@@ -18,6 +18,7 @@ import ClientReport from "./Pages/Report/ClientReport";
 import DropClient from "./Pages/Report/DropClient";
 import NegativeClient from "./Pages/Report/NegativeClient";
 import Untraceable from "./Pages/Report/Untraceable";
+import ClosedCases from "./Pages/Super Admin/ClosedCases";
 
 function App() {
   return (
@@ -89,6 +90,12 @@ function App() {
                 <PendingCases />
               </Sidebar>
             }
+          />
+          <Route 
+          
+          path="/ClosedCases"
+          element={<ClosedCases/>}
+          
           />
 
           {/* Admin Activity */}
