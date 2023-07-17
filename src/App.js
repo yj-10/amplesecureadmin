@@ -14,6 +14,10 @@ import Term from "./Pages/CMS/Term";
 import Login from "./AuthPages/Login";
 import Signup from "./AuthPages/Signup";
 import Forget from "./AuthPages/Forget";
+import ClientReport from "./Pages/Report/ClientReport";
+import DropClient from "./Pages/Report/DropClient";
+import NegativeClient from "./Pages/Report/NegativeClient";
+import Untraceable from "./Pages/Report/Untraceable";
 
 function App() {
   return (
@@ -86,7 +90,46 @@ function App() {
               </Sidebar>
             }
           />
-          {/* Super Admin */}
+
+          {/* Admin Activity */}
+          {/* Client sidebar */}
+
+          <Route
+            path="/ClientReport"
+            element={
+              <Sidebar>
+                <ClientReport />
+              </Sidebar>
+            }
+          />
+
+          <Route
+            path="/DropClient"
+            element={
+              <Sidebar>
+                <DropClient />
+              </Sidebar>
+            }
+          />
+
+          <Route
+            path="/NegativeClient"
+            element={
+              <Sidebar>
+                <NegativeClient />
+              </Sidebar>
+            }
+          />
+
+          <Route
+            path="/Untraceable"
+            element={
+              <Sidebar>
+                <Untraceable />
+              </Sidebar>
+            }
+          />
+          {/* Client sidebar */}
 
           {/* cms */}
 
