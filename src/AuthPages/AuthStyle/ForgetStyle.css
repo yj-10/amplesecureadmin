@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Forget_container {
+  display: block;
+  position: relative;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+}
+.Forget_container .forget_row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Forget_container .forget_row .icon {
+  display: grid;
+  place-items: center;
+}
+
+
+.Forget_container .forget_row .forget_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.Forget_container .forget_row .forget_box .input_box {
+  margin: 10px 0px;
+}

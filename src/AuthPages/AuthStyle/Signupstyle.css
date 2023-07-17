@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.signup_container {
+  display: block;
+  position: relative;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+}
+.signup_container .signup_row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.signup_container .signup_row .signup_title{
+    text-align: center;
+    color: rgb(88, 187, 179);
+}
+
+.signup_container .signup_row form .input_box{
+    margin: 4px 0px;
+
+}
